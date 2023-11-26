@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Life</title>
+</head>
+
+<h1>MY LIFE</h1>
+
+<hr/>
+
+<form method="post" action="./about.html">
+
+    <h2>Fill this Form to Proceed</h2>
+    <p>(Your feedback will be sent to my email.)</p>
+
+    <h3>Personal Details</h3>
+
+    <section class="details">
+        <label for="full-name">Full Name:</label>
+        <input id="full-name" type="text" name="details" required>
+
+        <br/><br/>
+
+        <label for="email">Email Address:</label>
+        <input id="email" type="email" name="details" required>
+
+        <br/><br/>
+
+        <label for="number">Phone Number:</label>
+        <input id="number" type="text" name="details" minlength="11" maxlength="11" pattern="[0-9]{11}" required>
+
+        <br/><br/>
+
+        <label for="DOB">Date of Birth:</label>
+        <input id="DOB" type="date" name="details" min="1953-01-01" max="2001-09-30">
+    </section>
+
+    <br/>
+
+    <h3>How Well Do You Know Me</h3>
+
+    <section class="color">
+        <span>What is my Best Color?</span>
+
+        <input id="red" type="checkbox" value="Red" name="color">
+        <label for="red">Red</label>
+
+        <input id="blue" type="checkbox" value="Blue" name="color">
+        <label for="blue">Blue</label>
+
+        <input id="green" type="checkbox" value="Green" name="color">
+        <label for="green">Green</label>
+
+        <input id="yellow" type="checkbox" value="Yellow" name="color">
+        <label for="yellow">Yellow</label>
+    </section>
+
+    <br/>
+
+    <section class="food">
+        <span>What is my favorite food?</span>
+
+        <input id="rice" type="radio" value="rice" name="food">
+        <label for="rice">Rice</label>
+
+        <input id="beans" type="radio" value="beans" name="food">
+        <label for="beans">Beans</label>
+
+        <input id="yam" type="radio" value="yam" name="food">
+        <label for="yam">Yam</label>
+
+        <input id="bread" type="radio" value="bread" name="food">
+        <label for="bread">Bread</label>
+    </section>
+
+    <br/>
+
+    <section class="age">
+        <label for="age">How old am I?</label>
+        <select id="age" name="age" required>
+            <option value="select">Select</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </select>
+    </section>
+
+    <br/>
+
+    <section class="ambition">
+        <label for="ambition">What is my most desired ambition?</label>
+        <input id="ambition" type="text" name="ambition">
+    </section>
+
+    <br/>
+
+    <section class="admission">
+        <label for="admission">What year did I gain admission into the University?</label>
+        <input id="admission" type="number" min="2016" max="2019">
+    </section>
+
+    <br/>
+
+    <section class="rank">
+        <label for="rank">What is my current rank in Brigade?</label>
+        <input id="rank" type="text" name="rank" list="ranks">
+        <datalist id="ranks">
+            <option value="2nd Lieutenant"></option>
+            <option value="1st Lieutenant"></option>
+            <option value="Captain"></option>
+            <option value="Field Captain"></option>
+            <option value="Assistant Brigadier"></option>
+        </datalist>
+    </section>
+
+    <br/>
+
+    <section class="hobby">
+        <label for="hobby">What is my hobby?</label>
+        <input id="hobby" type="text" name="hobby" list="hobbies">
+        <datalist id="hobbies">
+            <option value="Gaming"></option>
+            <option value="Coding"></option>
+            <option value="Watching Anime"></option>
+            <option value="Sleeping"></option>
+        </datalist>
+    </section>
+
+    <br>
+
+    <section class="rate-me">
+        <label for="rate">How would you rate me as a relative?</label>
+        <input id="rate" type="range" min="1" max="10" step="0.5">
+    </section>
+
+    <br/>
+
+    <section class="opinion">
+        <span>Do you think I can be one of the greatest Web Developer?</span>
+
+        <br/>
+
+        <input id="yes" type="radio" name="opinion">
+        <label for="yes">Yes</label>
+
+        <input id="no" type="radio" name="opinion">
+        <label for="no">No</label>
+
+        <input id="maybe" type="radio" name="opinion">
+        <label for="maybe">Maybe</label>
+    </section>
+
+    <br/>
+
+    <section class="about-me">
+        <label for="about-me">What do you think about me as a relative? Leave an advice.</label><br/>
+        <textarea id="about-me" type="text" name="about-me" rows="3" cols="20">Enter your message here.</textarea>
+    </section>
+
+    <br/>
+
+    <section class="submit">
+        <input type="submit" value="Send" required>
+    </section>
+</form>
+
+</html>
